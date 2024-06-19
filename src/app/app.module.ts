@@ -8,11 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //Herramientas de la base de datos
 import { environment } from 'src/environments/environment'; //Vinculación de la base de datos con la app
 import { AngularFireModule } from '@angular/fire/compat'; //Importación e las colecciones de información
-import { AngularFireStorageModule } from '@angular/fire/compat/storage'; //Imágenes y archivos
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { FooterComponent } from './scr/app/modules/shared/components/footer/footer.component'; //Imágenes y archivos
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
