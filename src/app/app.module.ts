@@ -9,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from 'src/environments/environment'; //Vinculación de la base de datos con la app
 import { AngularFireModule } from '@angular/fire/compat'; //Importación e las colecciones de información
 import { AngularFireStorageModule } from '@angular/fire/compat/storage'; //Imágenes y archivos
+//importaciones globales
+import { SharedModule } from './modules/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage'; //Imág
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    //importaciones globales
+    SharedModule,
     //Importaciones de la base de datos
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireStorageModule,

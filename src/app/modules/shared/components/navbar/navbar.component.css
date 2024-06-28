@@ -1,0 +1,19 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+@media (min-width:300px) and (max-width:700px){
+    mat-toolbar{
+        background-color: #9d84c4;
+    }
+}
+@media (min-width:700px){
+    mat-toolbar{
+        background-color: #cc85b3;
+    }
+}
+.estilo-marca{
+    font-size: 50px;
+    color: black;
+}
+
+
