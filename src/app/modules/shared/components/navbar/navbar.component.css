@@ -1,6 +1,8 @@
+/*por defecto*/
 .example-spacer {
     flex: 1 1 auto;
 }
+/*repsonsividad del header*/
 @media (min-width:300px) and (max-width:700px){
     mat-toolbar{
         background-color: #9d84c4;
@@ -11,9 +13,17 @@
         background-color: #cc85b3;
     }
 }
+/*imagen  representativa del logo*/
 .estilo-marca{
     font-size: 50px;
     color: black;
 }
-
-
+/*navbar*/
+mat-toolbar{
+    container: fluid;
+    height: 50px;
+    width: 100%;
+}
+mat-tab-group{
+    height: auto;
+}
