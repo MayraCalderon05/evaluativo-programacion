@@ -1,0 +1,6 @@
+.config-card{
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    position: relative;
+    margin: 15px 10px;
+}

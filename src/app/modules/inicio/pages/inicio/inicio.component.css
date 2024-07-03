@@ -1,6 +1,11 @@
 .titulos{
-    margin: 25px;
+    margin: 50px auto 20px auto;
+    font-family: 'Fondamento', cursive;
+    font-size: 50px;
+    display: block;
 }
 .secciones{
+    display: flex;
     justify-content: center;
+    align-items: center;
 }

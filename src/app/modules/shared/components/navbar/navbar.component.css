@@ -1,32 +1,36 @@
-/*importaciones*/
 /*por defecto*/
 .example-spacer {
     flex: 1 1 auto;
 }
+
 /*repsonsividad del header*/
-@media (min-width:300px) and (max-width:700px){
-    mat-toolbar{
+@media (min-width:300px) and (max-width:700px) {
+    mat-toolbar {
         background-color: #313042;
     }
 }
-@media (min-width:700px){
-    mat-toolbar{
+
+@media (min-width:700px) {
+    mat-toolbar {
         background-color: #313042;
     }
 }
+
 /*imagen  representativa del logo*/
-.estilo-marca{
-    font-family: "Playwrite PT", cursive;
-    font-size: 50px;
+.estilo-marca {
+    font-family: "Fondamento", cursive;
     font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
     color: black;
 }
+
 /*navbar*/
-mat-toolbar{
+mat-toolbar {
     container: fluid;
     height: 50px;
     width: 100%;
 }
-mat-tab-group{
+mat-tab-group {
     height: auto;
 }
