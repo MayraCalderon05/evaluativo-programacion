@@ -7,36 +7,149 @@ import { Elementos } from 'src/app/models/elementos';
   providedIn: 'root'
 })
 export class TiendaService {
-  //! inicialización de mis interfaces
   constructor() { }
+  //! inicialización de mis interfaces
+  cristal: Cristales = {
+    uid: '',
+    nombre:'',
+    beneficios:'',
+    limpieza:'',
+    precio:0,
+    destacado:false,
+    imagenUrl:'',
+    favorito:false,
+  }
+
+  elemento: Elementos = {
+    uid:'',
+    nombre:'',
+    cantidadPorPaquete:0,
+    sabor:'',
+    precio:0,
+    destacado:false,
+    imagenUrl:'',
+    favorito:false,
+  }
+
+  libro: Libros = {
+    uid:'',
+    titulo:'',
+    descripcion:'',
+    autor:'',
+    precio:0,
+    destacado:false,
+    imagenUrl:'',
+    favorito:false,
+  }
+  //! ------------------------------------------------------------------------------------------
+  
+  cristalesProd: any[] = [
+    {
+    uid: '',
+    nombre:'Dije de ágata fucsia',
+    beneficios:'La ágata favorece la calma y la armonía. Potencia la concentración, fomenta el amor y la sanación interna. Además, esta piedra te ayuda a eliminar la negatividad y la ira del corazón. Te anima a seguir adelante y a promover el amor propio y la valentía.',
+    limpieza:'Recuerda purificar las piedras de ágata fucsia con agua. También puedes limpiarlas con salvia blanca o palo santo. Si prefieres, puedes cargarlas con la energía de la luz de la luna o del sol.',
+    precio:250,
+    destacado:true,
+    imagenUrl:'',
+    favorito:false,
+    },
+    {
+      uid: '',
+      nombre:'Dije de amatista',
+      beneficios:'La amatista es especial para transmutar la energía en amor. Se considera que promueve la estabilidad emocional y es ideal para las sesiones de meditación. Te ayuda a tomar mejores decisiones y a conciliar el sueño si sufres de insomnio o pesadillas recurrentes.',
+      limpieza:'Para limpiar una amatista, usa tierra, agua y sal, incienso, con el sol, con la luna e incluso con otra piedra energética. La mejor para tí dependerá de qué herramientas tienes a tu disposición así que prueba la que mejor se te acomode.',
+      precio:250,
+      destacado:false,
+      imagenUrl:'',
+      favorito:false,
+    },
+    {
+      uid: '',
+      nombre:'Dije de ámbar',
+      beneficios:'Se dice que ayuda en diferentes procesos de sanación, transmuta la energía negativa y promueve la energía positiva lo que también ayuda a acelerar los procesos de curación. También te llena de vitalidad y potencia tu equilibrio emocional.',
+      limpieza:'Para limpiar tu piedra ambarina, simplemente enciende una varita de incienso o sahumerio y pasa tu colgante de ámbar Detallesamente a través del humo pero no la mojes',
+      precio:250,
+      destacado:true,
+      imagenUrl:'',
+      favorito:false,
+    },
+    {
+      uid: '',
+      nombre:'',
+      beneficios:'',
+      limpieza:'',
+      precio:0,
+      destacado:true,
+      imagenUrl:'',
+      favorito:false,
+    },
+    {
+      uid: '',
+      nombre:'',
+      beneficios:'',
+      limpieza:'',
+      precio:0,
+      destacado:true,
+      imagenUrl:'',
+      favorito:false,
+    },
+    {
+      uid: '',
+      nombre:'',
+      beneficios:'',
+      limpieza:'',
+      precio:0,
+      destacado:true,
+      imagenUrl:'',
+      favorito:false,
+    },
+    {
+      uid: '',
+      nombre:'',
+      beneficios:'',
+      limpieza:'',
+      precio:0,
+      destacado:true,
+      imagenUrl:'',
+      favorito:false,
+    },
+    {
+      uid: '',
+      nombre:'',
+      beneficios:'',
+      limpieza:'',
+      precio:0,
+      destacado:true,
+      imagenUrl:'',
+      favorito:false,
+    },
+    {
+      uid: '',
+      nombre:'',
+      beneficios:'',
+      limpieza:'',
+      precio:0,
+      destacado:true,
+      imagenUrl:'',
+      favorito:false,
+    },
+    {
+      uid: '',
+      nombre:'',
+      beneficios:'',
+      limpieza:'',
+      precio:0,
+      destacado:true,
+      imagenUrl:'',
+      favorito:false,
+    }
+  ]
 
   //Arreglo con todos mis productos
   productos: any[] = [
     //inicio de lista de cristales
-    {
-      Nombre: "Dije de ágata fucsia",
-      Descripcion: "La ágata favorece la calma y la armonía. Potencia la concentración, fomenta el amor y la sanación interna. Además, esta piedra te ayuda a eliminar la negatividad y la ira del corazón. Te anima a seguir adelante y a promover el amor propio y la valentía.",
-      Detalles: "Recuerda purificar las piedras de ágata fucsia con agua. También puedes limpiarlas con salvia blanca o palo santo. Si prefieres, puedes cargarlas con la energía de la luz de la luna o del sol. ",
-      Precio: 250,
-      Tipo: "cristal",
-      Destacado: true,
-      ImagenUrl: "../../assets/productos/cristales/agataFucsia.jpg",
-      Favorito: false,
-      Cantidad: 1,
-      Id: 1
-    },
-    {
-      Nombre: "Dije de amatista",
-      Descripcion: "La amatista es especial para transmutar la energía en amor. Se considera que promueve la estabilidad emocional y es ideal para las sesiones de meditación. Te ayuda a tomar mejores decisiones y a conciliar el sueño si sufres de insomnio o pesadillas recurrentes.",
-      Detalles: "Para limpiar una amatista, usa tierra, agua y sal, incienso, con el sol, con la luna e incluso con otra piedra energética. La mejor para tí dependerá de qué herramientas tienes a tu disposición así que prueba la que mejor se te acomode.",
-      Precio: 200,
-      Tipo: "cristal",
-      Destacado: false,
-      ImagenUrl: "../../assets/productos/cristales/amatista.jpg",
-      Favorito: false,
-      Cantidad: 1,
-      Id: 2
-    },
+
     {
       Nombre: "Dije de ámbar",
       Descripcion: "Se dice que ayuda en diferentes procesos de sanación, transmuta la energía negativa y promueve la energía positiva lo que también ayuda a acelerar los procesos de curación. También te llena de vitalidad y potencia tu equilibrio emocional.",
