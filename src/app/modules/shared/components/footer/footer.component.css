@@ -5,7 +5,23 @@
     align-items: center;
     margin-top: 50px;
     background-color: #313042;
+    color: #b17292;
+    padding-top: 30px;
+    font-family: "Fondamento", cursive;
 }
-.espaciado{
-    margin-top: 50px;
+.border-topp{
+    border-top: 1px solid #b17292;
+    width: 100%;
+    margin: 25px;
+    padding-top: 50px;
+}
+.iconos {
+    width: 25px; 
+    height:25px;
+}
+a {
+    color: #b17292;
+}
+a:hover {
+    color: #f6adc8;
 }
