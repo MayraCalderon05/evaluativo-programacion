@@ -35,7 +35,8 @@ mat-tab-group {
     height: auto;
     font: #df9caf;
 }
-mat-tab-header{
-    color: #df9caf;
-    font: #df9caf;
+
+/*header*/
+.header {
+    background-color: #f6adc8;
 }
