@@ -30,10 +30,19 @@ mat-toolbar {
     container: fluid;
     height: 50px;
     width: 100%;
+    
 }
 mat-tab-group {
     height: auto;
     font: #df9caf;
+}
+/*___________ iconos*/
+.tamanio {
+    width: 30px;
+    height: 30px;
+}
+.material-icons {
+    font-size: 30px;
 }
 
 /*header*/

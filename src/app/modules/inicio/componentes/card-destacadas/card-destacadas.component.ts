@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-destacadas.component.css']
 })
 export class CardDestacadasComponent {
+  
 
 }
