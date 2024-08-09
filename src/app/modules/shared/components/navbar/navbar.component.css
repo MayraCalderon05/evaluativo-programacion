@@ -2,20 +2,17 @@
 .example-spacer {
     flex: 1 1 auto;
 }
-
 /*repsonsividad del header*/
 @media (min-width:300px) and (max-width:700px) {
-    mat-toolbar {
+    nav {
         background-color: #313042;
     }
 }
-
 @media (min-width:700px) {
-    mat-toolbar {
+    nav {
         background-color: #313042;
     }
 }
-
 /*imagen  representativa del logo*/
 .estilo-marca {
     font-family: "Fondamento", cursive;
@@ -24,13 +21,12 @@
     font-size: 50px;
     color: black;
 }
-
 /*navbar*/
 mat-toolbar {
     container: fluid;
     height: 50px;
     width: 100%;
-    
+
 }
 mat-tab-group {
     height: auto;
@@ -48,4 +44,15 @@ mat-tab-group {
 /*header*/
 .header {
     background-color: #f6adc8;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+.alinear {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+

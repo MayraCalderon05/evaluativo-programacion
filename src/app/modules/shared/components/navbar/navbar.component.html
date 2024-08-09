@@ -1,31 +1,35 @@
-<header class="header">
-  <mat-toolbar-row style="height: 85px;">
-    <img src="../../../../../assets/joya.png" alt="icono de la marca Ataraxia" width="60px">
-    <span class="estilo-marca">Ataraxia</span>
+<header>
+  <mat-toolbar-row style="height: 85px;" class="header">
+    <section class="alinear">
+      <img src="../../../../../assets/joya.png" alt="icono de la marca Ataraxia" width="60px">
+      <span class="estilo-marca">Ataraxia</span>
+    </section>
     <!--no sé que hace esto pero cuando lo borré saltó error asi que por las dudas no lo borro-->
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon" aria-label="Sin sesión iniciada"
-      [matMenuTriggerFor]="opcionesUsuario"><mat-icon class="tamanio">person</mat-icon></button>
-    <mat-menu #opcionesUsuario="matMenu">
-      <button mat-menu-item routerLink="/registro">Registro</button>
-      <button mat-menu-item routerLink="/inicioSesion">Iniciar sesión</button>
-      <!-- <button mat-menu-item>Cerrar sesión</button> -->
-    </mat-menu>
-    <button mat-icon-button class="example-icon" aria-label="Favorito">
-      <mat-icon class="tamanio">favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Carrito">
-      <mat-icon class="tamanio">shopping_cart</mat-icon>
-    </button>
+    <section>
+      <button mat-icon-button class="example-icon" aria-label="Sin sesión iniciada"
+        [matMenuTriggerFor]="opcionesUsuario"><mat-icon class="tamanio">person</mat-icon></button>
+      <mat-menu #opcionesUsuario="matMenu">
+        <button mat-menu-item routerLink="/registro">Registro</button>
+        <button mat-menu-item routerLink="/inicioSesion">Iniciar sesión</button>
+        <!-- <button mat-menu-item>Cerrar sesión</button> -->
+      </mat-menu>
+      <button mat-icon-button class="example-icon" aria-label="Favorito">
+        <mat-icon class="tamanio">favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Carrito">
+        <mat-icon class="tamanio">shopping_cart</mat-icon>
+      </button>
+    </section>
   </mat-toolbar-row>
 </header>
-<!--navbar-->
-<mat-toolbar id="toolbar-estatica">
-  <!--animationDuration="2000ms" para relentizarlo-->
-  <mat-tab-group class="container-fluid" id="rosa">
+<!--navbar -->
+<nav mat-tab-nav-bar class="estilo-estructural" [tabPanel]="tabPanel">
+  <mat-tab-group class="container-fluid">
     <mat-tab label="Inicio" routerLink="/inicio"></mat-tab>
-    <mat-tab label="Productos"></mat-tab>
+    <mat-tab label="Productos" routerLink="/producto"></mat-tab>
     <mat-tab label="Contacto"></mat-tab>
     <mat-tab label="Nosotros"></mat-tab>
   </mat-tab-group>
-</mat-toolbar>
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>

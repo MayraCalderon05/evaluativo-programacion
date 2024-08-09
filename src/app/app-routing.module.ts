@@ -4,9 +4,11 @@ import { InicioComponent } from './modules/inicio/pages/inicio/inicio.component'
 
 const routes: Routes = [
   {path:"", component:InicioComponent},
+  {path:"", component:InicioComponent},
   {path:"inicio", component:InicioComponent},
   {path:"",loadChildren:()=>import('./modules/inicio/inicio.module').then(m=>m.InicioModule)},
-  {path:"",loadChildren:()=>import('./modules/autentificacion/autentificacion.module').then(m=>m.AutentificacionModule)}
+  {path:"",loadChildren:()=>import('./modules/autentificacion/autentificacion.module').then(m=>m.AutentificacionModule)},
+  {path:"",loadChildren:()=>import('./modules/productos/productos.module').then(m=>m.ProductosModule)}
 ];
 
 @NgModule({
